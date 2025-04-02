@@ -9,7 +9,7 @@ function HeroSection() {
     <section className="bg-gray-100 min-h-screen">
       <div className="container mx-auto flex flex-col md:flex md:flex-row ">
         <div className="md:w-1/2">
-          <Image src={image} alt="hero image" />
+          <Image src={image} alt="hero image" priority={true} />
         </div>
         <div className="md:w-1/2 md:flex md:flex-col gap-8 py-24 px-8">
           <h1 className="text-4xl font-bold">
