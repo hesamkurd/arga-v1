@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { it } from "node:test";
 import React, { useState } from "react";
 import {
   Button,
@@ -32,7 +31,6 @@ const navLink = [
 ];
 
 function Header() {
-  const [isMobileMenu, setIsMobileMenu] = useState(false);
   return (
     <header className="w-full bg-background shadow fixed">
       <div className="container mx-auto w-[90%] flex justify-between items-center py-4 ">
