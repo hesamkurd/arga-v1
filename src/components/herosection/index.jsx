@@ -2,17 +2,25 @@ import Image from "next/image";
 import React from "react";
 
 import image from "../../../public/assets/woman-hero.png";
+import vec1 from "../../../public/assets/Face Massage.svg";
 import { Button } from "../ui";
 
 function HeroSection() {
   return (
-    <section className="bg-gray-100 min-h-screen">
-      <div className="container mx-auto flex flex-col md:flex md:flex-row ">
-        <div className="md:w-1/2">
-          <Image src={image} alt="hero image" priority={true} />
+    <section className="px-8 md:px-8 bg-gray-100 min-h-screen">
+      <div className="flex flex-col md:flex md:flex-row md:gap-8 ">
+        {/* Image Section */}
+        <div className="md:w-1/2 hidden md:flex">
+          <Image
+            src={image}
+            alt="hero image"
+            className="object-cover"
+            priority={true}
+          />
         </div>
-        <div className="md:w-1/2 md:flex md:flex-col gap-8 py-24 px-8">
-          <h1 className="text-4xl font-bold">
+        {/* Left Section */}
+        <div className="md:w-1/2 md:flex md:flex-col lg:gap-8 md:gap-4 lg:py-24 md:py-12 lg:px-8">
+          <h1 className="lg:text-4xl md:text-xl  font-bold lg:leading-14 md:leading-7">
             مێوانی ماڵێ بۆ چێژبردن و فێر بوون، <br />
             ئەوەی پێویستە: بیسێنە، فێری بە، مێوانی بدە
           </h1>
@@ -28,7 +36,35 @@ function HeroSection() {
               <Button>دەس پێ بکە</Button>
             </div>
           </div>
-          <div></div>
+          <div className="flex flex-row justify-between items-center  md:w-3/4 xl:w-1/2 h-[200px] pt-16">
+            <div className="flex flex-col gap-4 justify-between items-center">
+              <Image
+                src={vec1}
+                className="bg-red-300 rounded-full p-1"
+                alt="first"
+              />
+              <span>10K</span>
+              <p>هاورێ</p>
+            </div>
+            <div className="flex flex-col justify-between gap-4 items-center">
+              <Image
+                src={vec1}
+                className="bg-red-300 rounded-full p-1"
+                alt="second"
+              />
+              <span>10K</span>
+              <p>هاورێ</p>
+            </div>
+            <div className="flex flex-col justify-between gap-4 items-center">
+              <Image
+                src={vec1}
+                className="bg-red-300 rounded-full p-1"
+                alt="thtee"
+              />
+              <span>10K</span>
+              <p>هاورێ</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
