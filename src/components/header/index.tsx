@@ -31,7 +31,7 @@ const navLink = [
 
 function Header() {
   return (
-    <header className="w-full bg-background shadow fixed">
+    <header className="w-full bg-background shadow fixed top-0 left-0">
       <div className="container mx-auto w-[90%] flex justify-between items-center py-4 ">
         {/* Mobile Menu */}
         <div className="flex md:hidden" role="button">
