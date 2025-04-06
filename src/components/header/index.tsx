@@ -17,11 +17,11 @@ import { AlignJustify, CircleUserRound, X } from "lucide-react";
 const navLink = [
   {
     href: "/",
-    name: "ماڵ",
+    name: "خانه",
   },
   {
     href: "/about",
-    name: "سەبارەت بە ئێمە",
+    name: "درباره ما",
   },
   {
     href: "/blog",
@@ -31,7 +31,7 @@ const navLink = [
 
 function Header() {
   return (
-    <header className="w-full bg-background shadow fixed top-0 left-0">
+    <header className="w-full bg-background shadow fixed top-0 left-0 h-14 md:h-16  ">
       <div className="container mx-auto w-[90%] flex justify-between items-center py-4 ">
         {/* Mobile Menu */}
         <div className="flex md:hidden" role="button">
@@ -55,7 +55,7 @@ function Header() {
                           key={item.name}
                           href={`${item.href}`}
                         >
-                          {item.name}
+                          <DrawerClose>{item.name}</DrawerClose>
                         </Link>
                       );
                     })}

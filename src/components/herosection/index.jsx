@@ -7,10 +7,10 @@ import { Button } from "../ui";
 
 function HeroSection() {
   return (
-    <section className="px-8 md:px-8 bg-gray-100 min-h-screen">
-      <div className="flex flex-col md:flex md:flex-row md:gap-8 ">
+    <section className="px-8 md:px-8 bg-gray-100 min-h-screen w-full">
+      <div className="flex flex-col md:flex md:flex-row md:gap-8 w-[80%] mx-auto mt-14 md:mt-16">
         {/* Image Section */}
-        <div className="md:w-1/2 hidden md:flex">
+        <div className="md:w-1/2  md:flex">
           <Image
             src={image}
             alt="hero image"
