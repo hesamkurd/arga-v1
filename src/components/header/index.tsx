@@ -85,7 +85,7 @@ function Header() {
         {/* Registery */}
         <div>
           <Button>
-            Login
+            ثبت نام
             <CircleUserRound className="size-6" />
           </Button>
         </div>
